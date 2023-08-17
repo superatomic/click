@@ -321,11 +321,6 @@ class BashComplete(ShellComplete):
                     ),
                     err=True,
                 )
-        else:
-            echo(
-                _("Couldn't detect Bash version, shell completion is not supported."),
-                err=True,
-            )
 
     def source(self) -> str:
         self._check_version()
